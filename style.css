@@ -1,0 +1,155 @@
+body {
+    background-color: chartreuse;
+    overflow:hidden;
+}
+
+.cloud, .cloud:before, .cloud:after {
+    position: absolute;
+    width: 70px;
+      height: 30px;
+      background: #fff;
+     
+      border-radius: 100px / 50px;
+  }
+.cloud { 
+    bottom: 300px;
+            animation: cloud 20s infinite linear;
+  }
+ 
+  @keyframes cloud {
+     
+      0%   { right: 100px; }
+      100% { right: 100%; } 
+  }
+  .cloud:before {
+    content: '';
+    left: 50px;
+  }
+  .cloud:after {
+    content: '';
+    left: 25px;
+    top: -10px;
+  }
+
+  .cloud1, .cloud1:before, .cloud1:after {
+    position: absolute;
+    width: 90px;
+      height: 50px;
+      background: #fff;
+      border-radius: 100px / 50px;
+  }
+.cloud1 { 
+    bottom: 250px;
+   
+            animation: cloud1 20s infinite linear;
+  }
+ 
+  @keyframes cloud1 {
+     
+      0%   {
+         left: 100px; 
+        }
+     100% {
+         left: 100%; } 
+  }
+  .cloud1:before {
+    content: '';
+    left: 50px;
+  }
+  .cloud1:after {
+    content: '';
+    left: 25px;
+    top: -10px;
+  }
+  
+
+  .cloud2, .cloud2:before, .cloud2:after {
+    position: absolute;
+    width: 100px;
+      height: 60px;
+      background: #fff;
+      border-radius: 100px / 50px;
+  }
+.cloud2 { 
+    bottom: 330px;
+    left: 50%;
+   
+            animation: cloud2 10s infinite linear;
+  }
+ 
+  @keyframes cloud2 {
+     
+    0%   {
+        left: 300px; 
+       }
+    100% {
+        left: 100%; } 
+  }
+  .cloud2:before {
+    content: '';
+    left: 50px;
+  }
+  .cloud2:after {
+    content: '';
+    left: 25px;
+    top: -10px;
+  }
+
+  /* mountain */
+  .mountains {
+
+  }
+  .first {
+    border-top: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 300px solid #0f2e0f;
+    border-right: 300px solid transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 21%;
+  }
+  .second {
+    border-top: 200px solid transparent;
+    border-left: 200px solid transparent;
+    border-bottom: 200px solid #0f2e0f;
+    border-right: 200px solid transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 39px;
+    left: 39%;
+  }
+  .third {
+    border-top: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 300px solid #0f2e0f;
+    border-right: 300px solid transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 46%;
+  }
+  
+  
+  .sun {
+    background-color: #ffeb3b;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    animation: animation 20s infinite alternate-reverse linear;
+  }
+
+  @keyframes animation {
+    0% {
+    
+      bottom: -100%;
+    }
+  
+    100% {
+     
+      top: 470px;
+    }
+  }
